@@ -1,0 +1,12 @@
+global _start
+
+_start:
+        xor eax,eax
+        push eax
+        push 0x6b636168
+        mov al,39
+        mov ebx, esp
+        int 0x80
+        xor eax,eax
+        mov al,1
+        int 0x80
